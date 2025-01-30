@@ -1,0 +1,15 @@
+
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: pruebatecnicasql
+      POSTGRES_USER: pruebatecnicasql
+      POSTGRES_PASSWORD: pruebatecnicasql
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
