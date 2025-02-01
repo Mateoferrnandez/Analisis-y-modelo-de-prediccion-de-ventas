@@ -13,3 +13,11 @@ def univariadonumerico(df,feature:str):
     plt.show()
     plt.figure(figsize=(10, 6))
     
+def univariadocategorico(df,feature:str):
+    plt.figure(figsize=(10, 6))
+    sns.countplot(x=feature, data=df, palette="muted")
+    plt.title(f"Distribucion de {feature}")
+    plt.xlabel(feature)
+    plt.ylabel("Count")
+    plt.xticks(rotation=45)
+    plt.show()
