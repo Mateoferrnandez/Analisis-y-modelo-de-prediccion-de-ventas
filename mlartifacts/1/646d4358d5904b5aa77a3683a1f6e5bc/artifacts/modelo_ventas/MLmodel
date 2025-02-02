@@ -1,0 +1,49 @@
+artifact_path: modelo_ventas
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+is_signature_from_type_hint: false
+mlflow_version: 2.20.1
+model_size_bytes: 4406086
+model_uuid: e81cccffbaba41fe91892b6b6e0b0c9c
+run_id: 646d4358d5904b5aa77a3683a1f6e5bc
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "VENTA_ZONA_101", "required": true}, {"type":
+    "long", "name": "VENTA_ZONA_102", "required": true}, {"type": "long", "name":
+    "VENTA_ZONA_103", "required": true}, {"type": "long", "name": "VENTA_ZONA_104",
+    "required": true}, {"type": "double", "name": "VENTA_ZONA_107", "required": true},
+    {"type": "long", "name": "VENTA_ZONA_109", "required": true}, {"type": "long",
+    "name": "VENTA_ZONA_110", "required": true}, {"type": "long", "name": "VENTA_ZONA_111",
+    "required": true}, {"type": "long", "name": "VENTA_ZONA_112", "required": true},
+    {"type": "double", "name": "VENTA_ZONA_115", "required": true}, {"type": "long",
+    "name": "VENTA_ZONA_116", "required": true}, {"type": "long", "name": "VENTA_ZONA_119",
+    "required": true}, {"type": "long", "name": "CAMPANA", "required": true}, {"type":
+    "double", "name": "CAMPANA_CAT_Cuarto_trimestre", "required": true}, {"type":
+    "double", "name": "CAMPANA_CAT_Primer_trimestre", "required": true}, {"type":
+    "double", "name": "CAMPANA_CAT_Segundo_trimestre", "required": true}, {"type":
+    "double", "name": "CAMPANA_CAT_Tercer_trimestre", "required": true}, {"type":
+    "double", "name": "ROPA_CAT_Conjuntos y otros", "required": true}, {"type": "double",
+    "name": "ROPA_CAT_Ropa_inferior", "required": true}, {"type": "double", "name":
+    "ROPA_CAT_Ropa_superior", "required": true}, {"type": "double", "name": "TALLA_CAT_Grande",
+    "required": true}, {"type": "double", "name": "TALLA_CAT_Mediana", "required":
+    true}, {"type": "double", "name": "TALLA_CAT_Peque\u00f1a", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-02-02 02:34:14.293111'
