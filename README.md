@@ -1,5 +1,5 @@
 ## Estructura
-- `powerbi`: Contiene el dashboard de powerbi hecho para el primer punto.
+- `powerbi`: Contiene el dashboard de powerbi hecho para el segundo punto.
 - `modelos`: Contiene el archivo .py con la logica de los modelos.
 - `evaluaciones`: Contiene el archivo .py con la logica de la evaluacion de los modelos y sus metricas.
 - `analisis`: contiene la logica de las funciones de visualizacion del EDA y de los modelos.
