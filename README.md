@@ -3,6 +3,7 @@
 - `modelos`: Contiene el archivo .py con la logica de los modelos.
 - `evaluaciones`: Contiene el archivo .py con la logica de la evaluacion de los modelos y sus metricas.
 - `analisis`: contiene la logica de las funciones de visualizacion del EDA y de los modelos.
+- `imagenes`: contiene las imagenes del proceso en mlflow
 - `puntos_1_2.ipynb`: Contiene los puntos 1 y 2 de la prueba
 - `modelo.ipynb`: Contiene el desarrollo y proceso del 3 punto.
 - `tranformaciondatos`: Contiene los archivos de manejo de outliers(detecion y manejo), asi como el archivo de creacion de ingenieria de caracteristicas( creacion de nuevas varibles y onehotencoding)
