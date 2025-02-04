@@ -1,0 +1,80 @@
+artifact_path: modelo_ventas
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.2
+is_signature_from_type_hint: false
+mlflow_version: 2.20.1
+model_size_bytes: 5672045
+model_uuid: 3a4e0edcb3e84778b1a3bffeefb5fbd3
+run_id: f45b11b139c445f48b5745f2b2ee3688
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "VENTA_ZONA_101", "required": true}, {"type":
+    "long", "name": "VENTA_ZONA_102", "required": true}, {"type": "long", "name":
+    "VENTA_ZONA_103", "required": true}, {"type": "long", "name": "VENTA_ZONA_104",
+    "required": true}, {"type": "double", "name": "VENTA_ZONA_107", "required": true},
+    {"type": "long", "name": "VENTA_ZONA_109", "required": true}, {"type": "long",
+    "name": "VENTA_ZONA_110", "required": true}, {"type": "long", "name": "VENTA_ZONA_111",
+    "required": true}, {"type": "long", "name": "VENTA_ZONA_112", "required": true},
+    {"type": "double", "name": "VENTA_ZONA_115", "required": true}, {"type": "long",
+    "name": "VENTA_ZONA_116", "required": true}, {"type": "long", "name": "VENTA_ZONA_119",
+    "required": true}, {"type": "double", "name": "TALLA_T-10", "required": true},
+    {"type": "double", "name": "TALLA_T-12", "required": true}, {"type": "double",
+    "name": "TALLA_T-14", "required": true}, {"type": "double", "name": "TALLA_T-16",
+    "required": true}, {"type": "double", "name": "TALLA_T-6", "required": true},
+    {"type": "double", "name": "TALLA_T-8", "required": true}, {"type": "double",
+    "name": "TALLA_T-L", "required": true}, {"type": "double", "name": "TALLA_T-M",
+    "required": true}, {"type": "double", "name": "TALLA_T-S", "required": true},
+    {"type": "double", "name": "TALLA_T-UNI", "required": true}, {"type": "double",
+    "name": "TALLA_T-XL", "required": true}, {"type": "double", "name": "TALLA_T-XS",
+    "required": true}, {"type": "double", "name": "TALLA_T-XXL", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_200 RE-PAQUETONES", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_201 RE-BLUSAS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_202 RE-BODYS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_204 RE-BUZOS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_206 RE-CAMISAS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_207 RE-CAMISETAS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_209 RE-CAPRIS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_210 RE-CHALECOS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_211 RE-CHAQUETAS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_213 RE-CONJUNTOS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_214 RE-ENTERIZOS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_215 RE-FALDAS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_216 RE-JEANS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_217 RE-JOGGERS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_218 RE-LEGGINS FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_219 RE-OVEROLES FEM", "required": true},
+    {"type": "double", "name": "NOMB_SUBGRUPO_220 RE-PANTALONES FEM", "required":
+    true}, {"type": "double", "name": "NOMB_SUBGRUPO_221 RE-PESCADORES FEM", "required":
+    true}, {"type": "double", "name": "NOMB_SUBGRUPO_223 RE-SHORTS FEM", "required":
+    true}, {"type": "double", "name": "NOMB_SUBGRUPO_224 RE-SOBRETODOS FEM", "required":
+    true}, {"type": "double", "name": "NOMB_SUBGRUPO_225 RE-VESTIDOS FEM", "required":
+    true}, {"type": "double", "name": "CAMPANA_201901", "required": true}, {"type":
+    "double", "name": "CAMPANA_201902", "required": true}, {"type": "double", "name":
+    "CAMPANA_201903", "required": true}, {"type": "double", "name": "CAMPANA_201904",
+    "required": true}, {"type": "double", "name": "CAMPANA_201905", "required": true},
+    {"type": "double", "name": "CAMPANA_201906", "required": true}, {"type": "double",
+    "name": "CAMPANA_201907", "required": true}, {"type": "double", "name": "CAMPANA_201908",
+    "required": true}, {"type": "double", "name": "CAMPANA_201909", "required": true},
+    {"type": "double", "name": "CAMPANA_201910", "required": true}, {"type": "double",
+    "name": "CAMPANA_201911", "required": true}, {"type": "double", "name": "CAMPANA_201912",
+    "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-02-04 03:24:15.874992'

@@ -5,8 +5,8 @@ from sklearn.model_selection import cross_val_score
 
 def evaluaciones(modelo,X,y,y_pred,y_test):
     try:
-        cv_scores = cross_val_score(modelo, X, y, cv=5, scoring='neg_mean_absolute_error',random_state=42)  # MAE negativo para que los valores sean positivos
-        cv_rmse = cross_val_score(modelo, X, y, cv=5, scoring='neg_root_mean_squared_error',random_state=42)  # RMSE negativo
+        cv_scores = cross_val_score(modelo, X, y, cv=5, scoring='neg_mean_absolute_error')  # MAE negativo para que los valores sean positivos
+        cv_rmse = cross_val_score(modelo, X, y, cv=5, scoring='neg_root_mean_squared_error')  # RMSE negativo
 
         mae = mean_absolute_error(y_test, y_pred)
         rmse = mean_squared_error(y_test, y_pred, squared=False)  # squared=False da la raíz cuadrada (RMSE)

@@ -10,8 +10,8 @@ df = pd.read_csv("D:\Documentos\Github\Prueba_tecnica_Azzorti\Datosmodelo.csv")
 # Definir los hiperparámetros del modelo
 
 params = {
-        "n_estimators": 100,  # Número de árboles en el bosque. El valor por defecto es 100.
-        "max_depth": None,  # Profundidad máxima de los árboles. Por defecto es None (sin límite).
+        "n_estimators": 200,  # Número de árboles en el bosque. El valor por defecto es 100.
+        "max_depth": 5,  # Profundidad máxima de los árboles. Por defecto es None (sin límite).
         "min_samples_split": 2,  # Número mínimo de muestras para dividir un nodo. Por defecto es 2.
         "min_samples_leaf": 1,  # Número mínimo de muestras en un nodo hoja. Por defecto es 1. # Número máximo de características a considerar para dividir un nodo. Por defecto es 'auto'.
         "bootstrap": True,  # Si se usan muestras bootstrap (con reemplazo). Por defecto es True.

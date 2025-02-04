@@ -8,16 +8,17 @@ df = pd.read_csv("D:\Documentos\Github\Prueba_tecnica_Azzorti\Datosmodelo.csv")
 
 # Definir los hiperparámetros del modelo
 params = {
-        "objective": "reg:squarederror",  # Para regresión con MSE
-        "learning_rate": 0.05,
-        "n_estimators": 600,
-        "max_depth": 5,
-        "min_child_weight": 1,
-        "subsample": 0.8,
-        "colsample_bytree": 0.8,
-        "eval_metric": "rmse",  # Métrica de evaluación durante el entrenamiento
-        "random_state": 8888,
-    }
+    "objective": "reg:squarederror",  # Define el objetivo del modelo. En este caso, regresión con error cuadrático medio (MSE).
+    "learning_rate": 0.05,  # Tasa de aprendizaje. Controla el ajuste de los pesos en cada iteración.
+    "n_estimators": 600,  # Número total de árboles (boosting rounds).
+    "max_depth": 5,  # Profundidad máxima de cada árbol. Controla la complejidad del modelo.
+    "min_child_weight": 1,  # Peso mínimo requerido en un nodo hoja para hacer una división.
+    "subsample": 0.8,  # Porcentaje de muestras usadas en cada árbol para reducir sobreajuste.
+    "colsample_bytree": 0.8,  # Proporción de características usadas en cada árbol.
+    "eval_metric": "rmse",  # Métrica de evaluación utilizada durante el entrenamiento (raíz del error cuadrático medio).
+    "random_state": 8888,  # Semilla para reproducibilidad de resultados.
+}
+
 
 modelo, X_train, X_test, y_train, y_test, X, y = xgb(df, params)
 

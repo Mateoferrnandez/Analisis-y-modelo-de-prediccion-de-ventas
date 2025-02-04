@@ -10,7 +10,7 @@ df = pd.read_csv("D:\Documentos\Github\Prueba_tecnica_Azzorti\Datosmodelo.csv")
 # Definir los hiperparámetros del modelo LightGBM
 params = {
     'objective': 'regression',  # Tipo de problema (regresión)
-    'metric': 'mae',  # Métrica de evaluación
+    'metric': 'mse',  # Métrica de evaluación
     'boosting_type': 'gbdt',  # Tipo de boosting
     'num_iterations': 300,  # Número de iteraciones
     'num_leaves': 19,  # Número de hojas

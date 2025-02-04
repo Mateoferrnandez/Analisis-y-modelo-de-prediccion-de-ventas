@@ -53,3 +53,6 @@ def lightgbm(df,params):
     model1.fit(X_train, y_train)
 
     return model,X_train, X_test, y_train, y_test,X,y,model.best_iteration,model1
+
+
+    #mlflow server --host 127.0.0.1 --port 5000 --backend-store-uri postgresql://pruebatecnicasql:pruebatecnicasql@localhost:5432/pruebatecnicasql
