@@ -35,5 +35,6 @@ Además, se utilizó MLflow para el rastreo de experimentos, almacenamiento de m
 - **`docker-compose.yml`** → Archivo de configuración para levantar un servidor local de PostgreSQL con Docker.
 
 ## **Cómo Visualizar el Proyecto**
-1. **Jupyter Notebook:** Abre los archivos en la carpeta correspondiente ( `modelo.ipynb`) para revisar el análisis detallado y las conclusiones.
-2. **MLflow:** Consulta las métricas y el análisis comparativo de modelos en la interfaz de MLflow.
+**Jupyter Notebook:**
+   - Accede al notebook en Deepnote para una mejor visualización: [Enlace aquí](https://deepnote.com/app/mateofernandez/Analisis-Exploratorio-de-Datos-y-Modelado-de-Prediccion-de-Ventas-f418be9d-f75b-406a-96c2-1d7387647953)
+   - Abre los archivos en la carpeta correspondiente ( `modelo.ipynb`) para revisar el análisis detallado y las conclusiones. 
